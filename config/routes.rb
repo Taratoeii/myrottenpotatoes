@@ -8,8 +8,8 @@ Myrottenpotatoes::Application.routes.draw do
     get 'auth/:provider'        => 'sessions#loginbefore'
     post 'logout'                  => 'sessions#destroy'
     get 'auth/failure'            => 'sessions#failure'
-    get 'auth/facebook'  => 'login'
-    get 'auth/twitter'  => 'login'
-    resources :movies
+    get 'auth/facebook'  => 'login_facebook'
+    get 'auth/twitter'  => 'login_twitter'
+
 end
 

@@ -6,3 +6,6 @@ end
 def OmniAuth.login_path(provider)
     "/auth/#{provider}"
 end
+
+
+
